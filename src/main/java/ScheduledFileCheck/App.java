@@ -38,7 +38,8 @@ public class App
         }
     }
 
-    @Scheduled(fixedDelay = 1000)
+//    @Scheduled(fixedDelay = 1000)
+    @Scheduled(cron="*/1 * * * * *")
     public void FileCheck() {
         byte[] temp= null;
         try {
